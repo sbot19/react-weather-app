@@ -5,7 +5,7 @@ import DailyForecast from "./DailyForecast";
 
 import "./App.css";
 
-function App() {
+export default function App() {
   return (
     <div className="container">
       <div className="weather-app">
@@ -16,5 +16,3 @@ function App() {
     </div>
   );
 }
-
-export default App;
