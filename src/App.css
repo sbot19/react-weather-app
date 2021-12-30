@@ -75,6 +75,9 @@ li:first-letter {
   border: 4px solid white;
   border-radius: 90px;
 }
+.current-button {
+  margin-left: 4px;
+}
 
 .CurrentWeatherConditions .current-weather-icon img {
   position: relative;
