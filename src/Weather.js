@@ -1,14 +1,17 @@
 import React, { useState } from "react";
 import axios from "axios";
+import FormattedDate from "./FormattedDate";
 import Loader from "react-loader-spinner";
 import "./Weather.css";
 
 export default function Weather(props) {
   const [weatherData, setWeatherData] = useState({ ready: false });
+
   function handleResponse(response) {
     setWeatherData({
       ready: true,
-      date: "Saturday 20:30",
+      date: new Date(response.data.dt * 1000),
+      //The '*1000' converts the milliseconds (from OpenWeatherMap) to actual Date and Time
       description: response.data.weather[0].description,
       iconUrl: "https://ssl.gstatic.com/onebox/weather/64/partly_cloudy.png",
       temperature: response.data.main.temp,
@@ -66,7 +69,7 @@ export default function Weather(props) {
         </form>
         <h1>{props.defaultCity}</h1>
         <ul>
-          <li>{weatherData.date}</li>
+          <FormattedDate date={weatherData.date} />
           <li>{weatherData.description}</li>
         </ul>
         <div className="row">
