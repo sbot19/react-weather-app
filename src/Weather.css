@@ -76,13 +76,12 @@ li:first-letter {
   margin-left: 10px;
 }
 
-.Weather img {
-  height: 65px;
-  width: 65px;
+.Weather canvas {
+  margin-top: 10px;
   margin-right: 10px;
   display: inline-block;
   position: relative;
-  top: -18px;
+  top: 7px;
 }
 
 .Weather .temperature {

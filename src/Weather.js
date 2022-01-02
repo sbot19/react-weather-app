@@ -15,7 +15,7 @@ export default function Weather(props) {
       date: new Date(response.data.dt * 1000),
       //The '*1000' converts the milliseconds (from OpenWeatherMap) to actual Date and Time
       description: response.data.weather[0].description,
-      iconUrl: "https://ssl.gstatic.com/onebox/weather/64/partly_cloudy.png",
+      icon: response.data.weather[0].icon,
       temperature: response.data.main.temp,
       feelsLike: Math.round(response.data.main.feels_like),
       highTemp: Math.round(response.data.main.temp_max),
