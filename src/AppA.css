@@ -1,0 +1,26 @@
+:root {
+  --secondary-color: rgb(223, 217, 217);
+  --source-color: rgb(202, 255, 189);
+  --hover-color: rgb(73, 238, 216);
+}
+
+.App {
+  max-width: 600px;
+  min-width: 400px;
+  margin: 30px auto;
+}
+
+ .open-source {
+  font-size: 14px;
+  color: var(--secondary-color);
+  font-family: "Ubuntu", sans-serif;
+  margin-bottom: 30px;
+}
+
+footer .open-source-link {
+  color: var(--source-color);
+}
+
+footer .open-source-link:hover {
+  color: var(--hover-color);
+}
