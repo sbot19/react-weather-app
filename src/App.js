@@ -2,8 +2,6 @@ import React from "react";
 
 import Weather from "./Weather";
 
-import CitySearch from "./CitySearch";
-import CurrentWeatherConditions from "./CurrentWeatherConditions";
 import DailyForecast from "./DailyForecast";
 import "./Weather.css";
 import "./AppA.css";
