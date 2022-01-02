@@ -8,12 +8,11 @@ import "./AppA.css";
 
 /* import "./App.css"; */
 
-export default function App() {
+export default function App(props) {
   return (
     <div className="container">
       <div className="weather-app">
         {/*  <CitySearch />   */}
-        {/* <CurrentWeatherConditions />  */}
         {/* <DailyForecast /> */}
         <Weather defaultCity="New York" />
         <footer className="open-source text-center">
