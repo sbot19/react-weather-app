@@ -5,7 +5,7 @@ import Weather from "./Weather";
 import CitySearch from "./CitySearch";
 import CurrentWeatherConditions from "./CurrentWeatherConditions";
 import DailyForecast from "./DailyForecast";
-import "./Weather.css"; 
+import "./Weather.css";
 import "./AppA.css";
 
 /* import "./App.css"; */
@@ -17,7 +17,7 @@ export default function App() {
         {/*  <CitySearch />   */}
         {/* <CurrentWeatherConditions />  */}
         {/* <DailyForecast /> */}
-        <Weather />
+        <Weather defaultCity="New York" />
         <footer className="open-source text-center">
           This app was coded by Scarleth Bernabe and is {""}
           <a

@@ -76,8 +76,8 @@ li:first-letter {
 }
 
 .Weather img {
-  height: 64px;
-  width: 64px;
+  height: 65px;
+  width: 65px;
   margin-right: 10px;
   display: inline-block;
   position: relative;
@@ -96,5 +96,4 @@ li:first-letter {
   line-height: 1;
   position: relative;
   top: -32px;
-  margin-left: 5px;
 }
