@@ -1,6 +1,7 @@
 import React from "react";
 import ReactAnimatedWeather from "react-animated-weather";
 import Background from "./Background";
+import "./WeatherIcon.css";
 
 export default function WeatherIcon(props) {
   //Code Mapping Variable
@@ -25,13 +26,13 @@ export default function WeatherIcon(props) {
     "50n": "FOG",
   };
   return (
-    <div>
+    <span className="WeatherIcon">
       <ReactAnimatedWeather
         icon={codeMapping[props.code]}
         color="white"
-        size={55}
+        size={90}
         animate={true}
       />
-    </div>
+    </span>
   );
 }

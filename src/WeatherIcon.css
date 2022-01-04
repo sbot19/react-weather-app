@@ -1,0 +1,8 @@
+:root {
+  --primary-color: white;
+}
+
+.WeatherIcon {
+  display: block;
+  text-align: center;
+}

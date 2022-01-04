@@ -1,7 +1,7 @@
 import React from "react";
 
 export default function FormattedDate(props) {
-    //Date
+  //Date
   let months = [
     "January",
     "February",
@@ -28,9 +28,8 @@ export default function FormattedDate(props) {
     "Thursday",
     "Friday",
     "Saturday",
-    
   ];
-  let dayOfTheWeek = days[props.date.getDate()];
+  let dayOfTheWeek = days[props.date.getDay()];
 
   //Time
   let hours = props.date.getHours();
@@ -50,5 +49,5 @@ export default function FormattedDate(props) {
   };
   let time = props.date.toLocaleString("en-US", options);
 
-  return `Last Updated: ${dayOfTheWeek}, ${month} ${dayNumber}| ${time}`;
+  return `Last Updated: ${dayOfTheWeek}, ${month} ${dayNumber} | ${time}`;
 }
