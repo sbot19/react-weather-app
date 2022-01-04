@@ -12,16 +12,6 @@ export default function WeatherTemperature(props) {
     setUnit("celsius");
   }
 
-  function fahrenheitTemperature() {
-    return Math.round((props.celsius * 9) / 5 + 32);
-  }
-  function fahrenheitHighTemperature() {
-    return Math.round((props.highTemp * 9) / 5 + 32);
-  }
-  function fahrenheitLowTemperature() {
-    return Math.round((props.lowTemp * 9) / 5 + 32);
-  }
-
   if (unit === "celsius") {
     return (
       <span>

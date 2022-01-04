@@ -2,7 +2,7 @@ import React from "react";
 
 import Weather from "./Weather";
 
-import DailyForecast from "./DailyForecast";
+/* import DailyForecast from "./DailyForecast"; */
 import "./Weather.css";
 import "./AppA.css";
 
