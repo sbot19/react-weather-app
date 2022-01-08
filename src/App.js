@@ -1,8 +1,7 @@
 import React from "react";
-
+import Background from "./Background";
 import Weather from "./Weather";
 
-/* import DailyForecast from "./DailyForecast"; */
 import "./Weather.css";
 import "./AppA.css";
 
@@ -11,9 +10,8 @@ import "./AppA.css";
 export default function App(props) {
   return (
     <div className="container">
+      <Background code={props.data.icon} />
       <div className="weather-app">
-        {/*  <CitySearch />   */}
-        {/* <DailyForecast /> */}
         <Weather defaultCity="New York" />
         <footer className="open-source text-center">
           This app was coded by Scarleth Bernabe and is {""}

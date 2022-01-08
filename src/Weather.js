@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import axios from "axios";
 import WeatherInfo from "./WeatherInfo";
+import WeatherForecast from "./WeatherForecast";
 import Loader from "react-loader-spinner";
 import "./Weather.css";
 
@@ -22,6 +23,8 @@ export default function Weather(props) {
       lowTemp: Math.round(response.data.main.temp_min),
       humidity: Math.round(response.data.main.humidity),
       wind: Math.round(response.data.wind.speed),
+      coordinates: response.data.coord,
+      //The 'coordinates' were added to receive weather conditions on a daily basis
     });
   }
 
@@ -89,6 +92,7 @@ export default function Weather(props) {
           </div>
         </form>
         <WeatherInfo data={weatherData} />
+        <WeatherForecast coordinates={weatherData.coordinates} />
       </div>
     );
   } else {

@@ -1,0 +1,22 @@
+.WeatherForecast {
+  text-align: center;
+  padding: 25px 0px 5px;
+}
+
+.forecast-day {
+  border: 2px solid white;
+  border-radius: 45px;
+  padding: 20px 10px 3px;
+  color: white;
+}
+
+.forecast-high-temp {
+  color: rgb(250, 206, 189);
+  font-weight: bolder;
+}
+
+.forecast-low-temp {
+  margin-left: 5px;
+  color: rgb(174, 223, 255);
+  font-weight: lighter;
+}
