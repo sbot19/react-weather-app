@@ -9,7 +9,7 @@ import Background from "./Background";
 export default function App(props) {
   return (
     <body>
-      <Background data={props.icon}/>
+      <Background />
       <div className="container">
       <div className="weather-app">
         <Weather defaultCity="New York" />
