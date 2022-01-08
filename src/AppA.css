@@ -1,3 +1,18 @@
+html {
+  background-attachment: scroll;
+}
+
+body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+  background-position: center;
+  position: relative;
+  background-image: url(/public/images/lake.gif);
+}
+
 :root {
   --secondary-color: rgb(223, 217, 217);
   --source-color: rgb(202, 255, 189);
@@ -24,4 +39,3 @@ footer .open-source-link {
 footer .open-source-link:hover {
   color: var(--hover-color);
 }
-
