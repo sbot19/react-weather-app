@@ -1,15 +1,11 @@
-html {
-  background-attachment: scroll;
-}
-
 body {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
   height: 100%;
-  margin: 0;
-  padding: 0;
   background-size: 100% 100%;
   background-repeat: no-repeat;
-  background-position: center;
-  position: relative;
   background-image: url(/public/images/lake.gif);
 }
 
@@ -23,6 +19,11 @@ body {
   max-width: 600px;
   min-width: 400px;
   margin: 30px auto;
+}
+
+.weather-app {
+  overflow: hidden;
+  position: relative;
 }
 
 .open-source {

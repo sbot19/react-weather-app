@@ -2,12 +2,14 @@ import React from "react";
 import Weather from "./Weather";
 import "./Weather.css";
 import "./AppA.css";
+import Background from "./Background";
 
 /* import "./App.css"; */
 
 export default function App(props) {
   return (
     <body>
+      <Background data={props.icon}/>
       <div className="container">
       <div className="weather-app">
         <Weather defaultCity="New York" />
