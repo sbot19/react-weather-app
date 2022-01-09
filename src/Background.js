@@ -5,6 +5,8 @@ export default function Background(props) {
     <img
       src={`/images/backgrounds/${props.code}.gif`}
       alt="Current weather background"
+      className="bg"
+      /* bg = background */
     />
   );
 }
