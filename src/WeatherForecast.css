@@ -6,17 +6,18 @@
 .forecast-day {
   border: 2px solid white;
   border-radius: 45px;
-  padding: 20px 10px 3px;
+  padding: 20px 10px 15px;
   color: white;
 }
 
 .forecast-high-temp {
+  margin-top: 5px;
   color: rgb(250, 206, 189);
   font-weight: bolder;
 }
 
 .forecast-low-temp {
-  margin-left: 5px;
+    margin-top: 2px;
   color: rgb(174, 223, 255);
   font-weight: lighter;
 }
