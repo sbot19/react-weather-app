@@ -19,7 +19,7 @@
   top: -48px;
 }
 
-a {
+button {
   background: transparent;
   border: 3px solid var(--primary-color);
   border-radius: 90px;
@@ -27,14 +27,12 @@ a {
   color: var(--primary-color);
 }
 
-a:active {
+button:active {
   background: var(--primary-color);
   color: var(--clicked-link-color);
 }
 
-a:hover {
+button:hover {
   background: var(--primary-color);
   color: var(--clicked-link-color);
 }
-
-

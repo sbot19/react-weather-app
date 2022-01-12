@@ -30,6 +30,7 @@ body {
   color: var(--secondary-color);
   font-family: "Ubuntu", sans-serif;
   padding-bottom: 40px;
+  border: none;
 }
 
 footer .open-source-link {

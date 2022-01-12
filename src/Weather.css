@@ -43,8 +43,7 @@
   opacity: 1;
 }
 
-.search-button,
-.current-button {
+.search-button {
   background: transparent;
   color: var(--primary-color);
   height: 44px;
@@ -54,9 +53,6 @@
 }
 .search-button {
   margin-left: -10px;
-}
-.current-button {
-  margin-left: 10px;
 }
 
 .Weather .content {

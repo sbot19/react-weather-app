@@ -20,7 +20,7 @@ export default function WeatherTemperature(props) {
             <div className="col-6 pe-1">
               <span className="temperature">{Math.round(props.celsius)}</span>{" "}
               <span className="unit">
-                <a>˚C</a> <a onClick={showFahrenheit}>˚F</a>
+                <button>˚C</button> <button onClick={showFahrenheit}>˚F</button>
               </span>
             </div>
             <div className="col-6">
@@ -48,7 +48,7 @@ export default function WeatherTemperature(props) {
               </span>{" "}
               <span className="unit">
                 {" "}
-                <a onClick={showCelsius}>˚C</a> <a>˚F</a>
+                <button onClick={showCelsius}>˚C</button> <button>˚F</button>
               </span>
             </div>
             <div className="col-6">
