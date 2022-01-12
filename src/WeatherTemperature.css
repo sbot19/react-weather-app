@@ -1,5 +1,6 @@
 :root {
   --primary-color: white;
+  --clicked-link-color: rgb(1, 8, 49);
 }
 
 .temperature {
@@ -11,17 +12,29 @@
   top: 7px;
 }
 
-.unit button {
+.unit a {
   font-size: 18px;
   line-height: 1;
   position: relative;
-  top: -60px;
+  top: -48px;
 }
 
-button {
+a {
   background: transparent;
   border: 3px solid var(--primary-color);
   border-radius: 90px;
   padding: 5px 9px;
   color: var(--primary-color);
 }
+
+a:active {
+  background: var(--primary-color);
+  color: var(--clicked-link-color);
+}
+
+a:hover {
+  background: var(--primary-color);
+  color: var(--clicked-link-color);
+}
+
+

@@ -1,11 +1,11 @@
 import React from "react";
 import Weather from "./Weather";
 import "./Weather.css";
-import "./AppA.css";
+import "./App.css";
 
 /* import "./App.css"; */
 
-export default function App(props) {
+export default function App() {
   return (
     <body>
       <div className="container">
