@@ -12,27 +12,11 @@
   top: 7px;
 }
 
-.unit a {
-  font-size: 18px;
+.unit {
+  font-size: 30px;
+  font-weight: bold;
   line-height: 1;
   position: relative;
-  top: -48px;
-}
-
-button {
-  background: transparent;
-  border: 3px solid var(--primary-color);
-  border-radius: 90px;
-  padding: 5px 9px;
+  top: -50px;
   color: var(--primary-color);
-}
-
-button:active {
-  background: var(--primary-color);
-  color: var(--clicked-link-color);
-}
-
-button:hover {
-  background: var(--primary-color);
-  color: var(--clicked-link-color);
 }
