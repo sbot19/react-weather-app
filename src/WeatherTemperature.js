@@ -6,11 +6,11 @@ export default function WeatherTemperature(props) {
     <span>
       <span className="WeatherTemperature">
         <div className="row">
-          <div className="col-6 pe-1">
+          <div className="col-sm-12 col-md-6">
             <span className="temperature">{Math.round(props.celsius)}</span>{" "}
             <span className="unit">˚C</span>
           </div>
-          <div className="col-6">
+          <div className="col-sm-6">
             <ul>
               <li>Feels like: {props.feelsLike}˚C</li>
               <li>

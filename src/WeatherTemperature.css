@@ -20,3 +20,24 @@
   top: -50px;
   color: var(--primary-color);
 }
+
+.temperature {
+  padding-right: 12px;
+}
+
+@media (max-width: 576px) {
+  .temperature {
+    font-size: 70px;
+    line-height: 70px;
+    position: relative;
+    top: 10px;
+    /* Question: How can the temperature be centered? */
+  }
+
+  .unit {
+    font-size: 24px;
+    position: relative;
+    top: -23px;
+    /* Question: How can the unit be centered? */
+  }
+}
