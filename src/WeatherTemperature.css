@@ -31,6 +31,7 @@
     line-height: 70px;
     position: relative;
     top: 10px;
+    text-align: center;
     /* Question: How can the temperature be centered? */
   }
 
