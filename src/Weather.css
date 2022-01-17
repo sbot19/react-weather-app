@@ -105,10 +105,9 @@
   .city-input {
     width: 100%;
     position: relative;
-    right: -15px;
+    right: 5px;
     margin: auto;
   }
-  /* Question: How can the search bar be centered? */
 
   .search-button {
     display: none;
@@ -117,5 +116,14 @@
   img {
     display: block;
     margin: 0 auto;
+  }
+}
+
+@media (max-width: 828px) {
+  .city-input {
+    width: 80%;
+    position: relative;
+    right: -7px;
+    margin: auto;
   }
 }

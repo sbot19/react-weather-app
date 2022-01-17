@@ -48,27 +48,19 @@ export default function WeatherForecastDay(props) {
   }
 
   return (
-    <div>
-      <div className="forecast-day">
-        <div className="col">
-          <div className="row">
-            <div className="dayOfTheWeek">{day()}</div>
-            <div className="month-date">
-              {month()} {date()}
-            </div>
+    <div className="forecast-day">
+      <div className="col">
+          <div className="dayOfTheWeek">{day()}</div>
+          <div className="month-date">
+            {month()} {date()}
           </div>
-          <div className="row">
-            <div className="weather-icon">
-              <WeatherIcon code={props.data.weather[0].icon} size={36} />
-            </div>
+          <div className="weather-icon">
+            <WeatherIcon code={props.data.weather[0].icon} size={36} />
           </div>
-          <div className="row">
-            <div className="forecast-day-temps">
-              <div className="forecast-high-temp">{highTemp()}</div>
-              <div className="forecast-low-temp">{lowTemp()}</div>
-            </div>
+          <div className="forecast-day-temps">
+            <div className="forecast-high-temp">{highTemp()}</div>
+            <div className="forecast-low-temp">{lowTemp()}</div>
           </div>
-        </div>
       </div>
     </div>
   );

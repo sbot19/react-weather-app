@@ -6,7 +6,7 @@
 .forecast-day {
   border: 2px solid white;
   border-radius: 45px;
-  padding: 20px 10px 15px;
+  padding: 20px 10px;
   color: white;
 }
 
@@ -29,14 +29,8 @@
 
 @media (max-width: 576px) {
   .forecast-day {
-    padding: 10px auto;
-    margin: 15px auto;
-  }
-
-  .row .dayOfTheWeek,
-  .row .month-date {
-    display: flex;
-    flex-direction: column;
+    padding: 10px 0px;
+    margin: 15px 40px;
   }
 
   .dayOfTheWeek {
@@ -44,4 +38,9 @@
     font-size: 28px;
   }
 }
-/* How can I style the forecast days in mobile version so that the DayOfTheWeek & Month/dayNumber are in one row and the weather icon and high/low temps in a second row within the forecast day column?*/
+@media (max-width: 768px) {
+  .weather-info {
+    padding-left: 30px;
+    margin-right: 5px;
+  }
+}

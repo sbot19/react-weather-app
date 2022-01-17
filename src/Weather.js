@@ -63,7 +63,6 @@ export default function Weather(props) {
                   className="form-control city-input"
                   onChange={handleCityChange}
                 />
-                
               </div>
               <div className="col-2">
                 <button type="submit" value="search" className="search-button">
